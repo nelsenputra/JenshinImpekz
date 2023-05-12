@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------FONT---------- */
+@font-face {
+    font-family: Inter;
+    src: url(assetLG/INTER\ FONT.ttf);
+}
+@font-face {
+    font-family: Gen;
+    src: url(assetLG/GENSHIN\ FONT.ttf);
+}
+
+/* ----------UTAMA---------- */
+.utama{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/Login_SignUp/assetLG/REGISTER%20PAGE%20BACKGROUND1.png?raw=true);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+/* ----------KONTEN---------- */
+.konten{
+    /* background-color: blue; */
+    display: flex;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+/* ----------KIRI---------- */
+.kiri{
+    /* background-color: green; */
+    width: 45%;
+    height: 100%;
+}
+
+/* Logo */
+.kiri .logo{
+    /* background-color: red; */
+    width: 100%;
+    height: 50%;
+    margin-left: -11.5%;
+    margin-top: 15%;
+    justify-content: center;
+}
+.logo img{
+    width: 120%;
+    height: 120%;
+}
+
+/* text-logo */
+.kiri .text-logo{
+    /* background-color: yellow; */
+    font-family: Gen;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    margin-top: -4%;
+    margin-left: -0.39%;
+}
+.start{
+    font-size: 3rem;
+}
+.the{
+    font-size: 1.7rem;
+}
+
+
+/* ----------KANAN---------- */
+.kanan{
+    background:rgba(255, 255, 255, 0.65);
+    width: 40%;
+    height: 100%;
+    font-family: Inter;
+}
+
+.atas{
+    /* background-color: grey; */
+    width: 85%;
+    height: 5%;
+    margin-left: 7%;
+    margin-top: 30%;
+    align-items: center;
+}
+.panah{
+    /* background-color: aqua; */
+    margin-top: -3rem;
+    max-width: 100%; 
+    display:block; 
+    height: auto;
+}
+.panah-judul{
+    /* background-color: rebeccapurple; */
+    width: 100%;
+}
+.login{
+    /* background-color: red; */
+    color: black;
+    justify-content: center;
+    text-align: center;
+    font-size: 3.4rem;
+}
+
+
+.kanan .tengah{
+    /* background-color: brown; */
+    width: 85%;
+    height: 30%;
+    margin-left: 7%;
+    margin-top: 5rem;
+}
+.tengah form input{
+    background-color: white;
+    width: 100%;
+    height: 1%;
+    margin-bottom: 1%;
+    padding: 1.5% 5%;
+    font-size: 1.2rem;
+    margin-top: 0.5%;
+}
+.input-password #errorPass{
+    /* background-color: rebeccapurple; */
+    font-size: 1rem;
+    font-family: Inter;
+}
+.input-email #errorEmail{
+    font-size: 1rem;
+    font-family: Inter;
+}
+.Playfor{
+    width: 100%;
+    height: 5vh;
+}
+.tengah .Playfor button{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: black;
+    margin-top: 8%;
+    font-family: Inter;
+    font-size: 1.3rem;
+}
+
+.kanan .bawah{
+    /* background-color: burlywood; */
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    font-size: 1rem;
+    margin-left: 8.5%;
+}
+.forgot-Pass a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.register-Now a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+
+
+
+
+/* ----------MEDIA SCREEN---------- */
+
+@media screen and (max-width: 1440px){
+    .kiri .logo{
+        height: 45%;
+        margin-top: 20%;
+    }
+    .start{
+        font-size: 2.5rem;
+    }
+    .the{
+        font-size: 1.3rem;
+    }
+
+    .atas{
+        width: 84%;
+        margin-left: 8%;
+        margin-top: 30%;
+    }
+    .login{
+        /* margin-top: rem; */
+        font-size: 3rem;
+    }
+    .panah{
+        /* background-color: rebeccapurple; */
+        margin-top: -2.5rem;
+    }
+
+    .input-email{
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: max-content;
+    }
+    .tengah{
+        width: 85%;
+        height: 30%;
+        margin-left: 3.5rem;
+        margin-top: 4rem;
+    }  
+    form input{
+        background-color: white;
+        width: 100%;
+        height: 5%;
+        margin-bottom: 1%;
+        padding: 2.7% 2.5%;
+        font-size: 1.4rem;
+    }
+    #errorPass{
+        /* background-color: rebeccapurple; */
+        font-size: 1rem;
+        margin-bottom: 3%;
+    }
+    #errorEmail{
+        font-size: 1rem;
+        margin-bottom: 3%;
+    }
+    .Playfor button{
+        width: 100%;
+        height: 3.5rem;
+    }
+
+    .bawah{
+        margin-left: 3.5rem;
+        width: 85%;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+    .kiri .logo{
+        height: 40%;
+        margin-top: 30%;
+    }
+    .start{
+        font-size: 2rem;
+    }
+    .the{
+        font-size: 1rem;
+    }
+
+    .atas{
+        width: 80%;
+        margin-left: 9.5%;
+        margin-top: 50%;
+    }
+    .login{
+        font-size: 2.3rem;
+    }
+    .panah{
+        margin-top: -1.9rem;
+    }
+
+    .kanan .tengah{
+        /* background-color: brown; */
+        width: 80%;
+        height: 28.5%;
+        margin-left: 9.5%;
+        margin-top: 10%;
+    }
+    .tengah form input{
+        width: 100%;
+        height: 4%;
+        font-size: 1.1rem;
+    }
+    .input-password #errorPass{
+        font-size: 1rem;
+    }
+    .input-email #errorEmail{
+        font-size: 1rem;
+    }
+    .tengah .Playfor button{
+        width: 100%;
+        height: 2.5rem;
+        font-size: 1.2rem;
+    }
+
+    .kanan .bawah{
+        width: 75%;
+        font-size: 0.95rem;
+        margin-left: 12%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .kiri .logo{
+        height: 37%;
+        margin-top: 40%;
+    }
+    .start{
+        font-size: 1.5rem;
+    }
+    .the{
+        font-size: 0.8rem;
+    }
+
+    .atas{
+        width: 89%;
+        margin-left: 5%;
+        margin-top: 50%;
+    }
+    .login{
+        font-size: 1.8rem;
+    }
+    .panah{
+        margin-top: -1.6rem;
+    }
+
+    .tengah{
+        width: 89%;
+        height: 30%;
+        margin-left: 5%;
+    }
+    .tengah form input{
+        width: 110%;
+        height: 4%;
+        margin-left: -5%;
+        font-size: 0.9rem;
+    }
+    .input-password #errorPass{
+        /* background-color: rebeccapurple; */
+        font-size: 0.8rem;
+        margin-left: -5%;
+    }
+    .input-email #errorEmail{
+        font-size: 0.8rem;
+        margin-left: -5%;
+    }
+    .tengah .Playfor button{
+        width: 110%;
+        height: 1.8rem;
+        margin-left: -5%;
+        font-size: 0.9rem;
+    }
+
+    .kanan .bawah{
+        width: 89%;
+        font-size: 0.75rem;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
+}
+
+@media screen and (max-width: 426px){
+    .konten{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .kanan{
+        width: 20rem;
+    }
+    .kiri .logo{
+        height: 25%;
+        margin-top: 70%;
+    }
+    .start{
+        font-size: 0.8rem;
+    }
+    .the{
+        font-size: 0.4rem;
+    }
+
+    .atas{
+        width: 85%;
+        height: 3%;
+        margin-left: 7.5%;
+        margin-top: 60%;
+    }
+    .login{
+        font-size: 1.2rem;
+    }
+    .panah{
+        margin-top: -1.2rem;
+    }
+
+    .kanan .tengah{
+        width: 80%;
+        height: 21.5%;
+        margin-left: 10%;
+    }
+    form input{
+        /* background-color: red; */
+        width: 100%;
+        height: 4%;
+        margin-bottom: 1%;
+        font-size: 0.8rem;
+    }
+    .input-password #errorPass{
+        /* background-color: rebeccapurple; */
+        font-size: 0.6rem;
+    }
+    .input-email #errorEmail{
+        font-size: 0.6rem;
+    }
+    .tengah .Playfor button{
+        width: 110%;
+        height: 1.4rem;
+        font-size: 0.75rem;
+    }
+
+    .kanan .bawah{
+        width: 85%;
+        font-size: 0.6rem;
+        margin-left: 7.5%
+    }
+}
