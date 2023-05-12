@@ -1,0 +1,774 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    overflow: scroll;
+}
+
+@font-face {
+    font-family: genshin;
+    src: url(asset/genshinFont.ttf);
+}
+
+@font-face {
+    font-family: inter;
+    src: url(asset/interFont.ttf);
+}
+
+.jumbotron{
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.videoBG{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+.content-jumbotron{
+    z-index: 2;
+}
+
+.black-cover{
+    /* background-color: aqua; */
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/blackCover.png?raw=true);
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+}
+
+.content-jumbotron{
+    /* background-color: dimgrey; */
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-jumbotron-box{
+    /* background-color: aqua; */
+    width: 90%;
+    height: 100%;
+    font-family: genshin;
+    color: rgba(255, 255, 255, 0.9);
+    /* text-shadow: 0 0 20px rgba(0, 0,0, 0.5); */
+}
+
+.start-journey{
+    /* background-color: red; */
+    /* font-size: 2.188rem; */
+    font-size: calc(2.1vw + 5%);
+    /* filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5)); */
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.open-world{
+    margin-top: 0.5%;
+    /* font-size: 1.125rem; */
+    font-size: calc(1vw + 6%);
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.platforms-jumbotron{
+    /* background-color: black; */
+    margin-top: 1%;
+    /* width: 40%; */
+    width: calc(33vw + 1%);
+    /* height: 20%; */
+    height: calc(2.5vw + 0.5%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ps{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetHome/platformPS.png?raw=true);
+}
+
+.platforms-jumbotron div{
+    width: 23%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    border: rgba(255, 255, 255, 0.8) solid 1px;
+    border-radius: 2%;
+    background-color: rgba(12, 101, 175, 0.3);
+    /* width: 122px;
+    height: 41px;
+    border: rgba(255, 255, 255, 0.8) solid 1px;
+    border-radius: 2px;
+    background-color: rgba(12, 101, 175, 0.3); */
+}
+
+.platforms-jumbotron div:hover{
+    border: white solid 1px ;
+    background-color: #0C65AF;
+}
+
+.app-store{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetHome/platformAppStore.png?raw=true);
+    /* width: 23%;
+    height: 70%;
+    background-position: center;
+    background-size: cover;
+    border: rgba(255, 255, 255, 0.8) solid 1px;
+    border-radius: 2%;
+    background-color: rgba(12, 101, 175, 0.3); */
+}
+
+.google-play{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetHome/platformGooglePlay.png?raw=true);
+    /* width: 23%;
+    height: 70%;
+    background-position: center;
+    background-size: cover;
+    border: rgba(255, 255, 255, 0.8) solid 1px;
+    border-radius: 2%;
+    background-color: rgba(12, 101, 175, 0.3); */
+}
+
+.windows{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetHome/platformWindows.png?raw=true);
+    width: 23%;
+    height: 70%;
+    background-position: center;
+    background-size: cover;
+    border: rgba(255, 255, 255, 0.8) solid 1px;
+    border-radius: 2%;
+    background-color: rgba(12, 101, 175, 0.3);
+}
+
+.new-character{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetHome/newCharacterBG.png?raw=true);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.judul-character{
+    /* background-color: saddlebrown; */
+    width: 52%;
+    height: 25%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* top: 0; */
+}
+
+.new-weapon{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetHome/newWeaponBG.png?raw=true);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.black-cover{
+    /* background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/blackCover.png?raw=true); */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+}
+
+.judul-weapon{
+    /* background-color: saddlebrown; */
+    width: 52%;
+    height: 20%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    /* justify-self: center; */
+}
+
+.arrowLeft, .arrowRight{
+    /* background-color: aquamarine; */
+    width: 28%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.arrowLeft img{
+    /* background-color: black; */
+    width: 100%;
+    height: 50%;
+}
+
+.title-feature{
+    /* background-color: red; */
+    width: calc(20vw + 10vw);
+    font-family: inter;
+    font-size: 2.5rem;
+    /* font-size: calc(3vw - 50vw); */
+    color: white;
+    font-weight: 300;
+    text-align: center;
+}
+
+.arrowRight img{
+    /* background-color: blue; */
+    width: 100%;
+    height: 50%;
+}
+
+.content-weapon{
+    /* background-color: aqua; */
+    width: 80%;
+    height: 67%;
+    align-self: center;
+    display: flex;
+    z-index: 2;
+}
+
+.weapon-kiri{
+    /* background-color: beige; */
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetHome/weaponKiriBG.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: 50% 50%; */
+    background-size: calc(15vw + 60px) calc(15vw + 60px);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.weapon-kanan{
+    /* background-color: darkmagenta; */
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetHome/weaponKananBG.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: 50% 50%; */
+    background-size: calc(15vw + 60px) calc(15vw + 60px);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.weapon-kanan img{
+    /* background-color: aqua; */
+    width: 55%;
+    height: 75%;
+}
+
+#weaponR:hover{
+    transition: .2s ease-in;
+    width: 65%;
+    height: 85%;
+}
+
+.weapon-kiri img{
+    width: 82%;
+    height: 92%;
+}
+
+#weaponL:hover{
+    transition: .2s ease-in;
+    width: 95%;
+    height: 105%;
+}
+
+.info-kiri, .info-kanan{
+    /* background-color: aqua; */
+    position: absolute;
+    /* background-color: aqua; */
+    width: 45%;
+    height: 40%;
+    bottom: 0;
+    right: 0;
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0 0 20px rgba(0, 0,0, 0.5);
+    font-family: genshin;
+    font-size: 2.188rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-kiri img, .info-kanan img{
+    height: 10%;
+    width: 35%;
+    /* background-color: black; */
+}
+
+/* dhuar */
+
+.maps-char{
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bg-maps-char{
+    position: relative;
+    /* background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetHome/mondstadt.png?raw=true); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: blue;
+    border: transparent rgba(0, 0,0, 0.3) 7px ;
+}
+
+.bg-maps-char:nth-child(1){
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetHome/mondstadt.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex; */
+}
+.bg-maps-char:nth-child(2){
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetHome/liyue.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* width: 100%;
+    background-color: yellow;
+    background-size: cover;
+    background-position: center;
+    display: flex; */
+}
+.bg-maps-char:nth-child(3){
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetHome/inazuma.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex; */
+}
+.bg-maps-char:nth-child(4){
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetHome/sumeru.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex; */
+}
+
+#hover-img{
+    /* width: 35%; */
+    width: calc(40vw - 30px);
+    /* width: calc(31vw + 20%); */
+    height: 100%;
+    /* height: calc(12.5vw + 0.5vw); */
+    justify-self: flex-end;
+    right: 2%;
+    display: none;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#garis-bawah{
+    width: 10%;
+    height: 10%;
+    bottom: 27%;
+    display: none;
+}
+
+.bg-maps-char:hover #hover-img, .bg-maps-char:hover #garis-bawah{
+    transition: 300ms ease-out;
+    display: block;
+}
+
+.bg-maps-char:hover{
+    border: white solid 7px;
+    transition: 300ms ease-out;
+    background-size: 120% 120%;
+}
+
+.bg-maps-char img{
+    /* background-color: aqua; */
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden; 
+}
+
+.bg-maps-char:hover .hitam{
+    transition: 300ms ease-out;
+    /* border: white solid 7px; */
+    opacity: 0;
+}
+
+.maps-char-center{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetHome/Vector.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-color: aqua; */
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: inter;
+    /* font-size: 2.188rem; */
+    font-size: calc(2.5vw + 10%);
+    font-weight: 350;
+    z-index: 2;
+}
+
+.comingsoon-char{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-comingsoon-char{
+    position: relative;
+    background-color: #111B20;
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetHome/comingsoon.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888888;
+    font-family: inter;
+    /* font-size: 2.188rem; */
+    font-size: calc(2.5vw + 10%);
+    font-weight: 350;
+} 
+
+.container-character{
+    /* height: 65%; */
+    height: calc(37vw - 0.1%);
+    width: 80%;
+    /* background-color: #888888; */
+    margin-top: -2vw;
+    display: flex;
+    /* flex-flow: column; */
+    position: relative;
+}
+
+.img-dehya{
+    /* background-color: #111B20; */
+    width: 50%;
+    height: 100%;
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetHome/dehyaImg.png?raw=true);
+    background-size: 99%;
+    background-repeat: no-repeat;
+    z-index: 5;
+}
+
+.img-mika{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetHome/mikaImg.png?raw=true);
+    background-size: 99%;
+    background-repeat: no-repeat;
+    z-index: 5;
+}
+
+.desc-mika{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetHome/mikaDesc.png?raw=true);
+    
+    background-size: 99%;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.desc-dehya{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetHome/dehyaDesc.png?raw=true);
+    background-size: 98.5%;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    display: none;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.bungkus{
+    /* background-color: #111B20; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-desc{
+    /* background-color: #888888; */
+    width: 99%;
+    height: 60%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#content-mika{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetHome/mikaLogo.png?raw=true);
+}
+
+#content-dehya{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetHome/dehyaLogo.png?raw=true);
+}
+
+.container-content{
+    /* background-color: aqua; */
+    width: 80%;
+    height: 70%;
+    /* display: flex; */
+    z-index: 10;
+}
+
+.nama-bintang{
+    /* background-color: aqua; */
+    font-family: genshin;
+    color: white; 
+    /* font-size: 2.5rem; */
+    font-size: calc( 2.5vw - 1%);
+    display: flex;
+    flex-direction: column;
+}
+
+.nama-bintang img{
+    width: 20%;
+    height: 20%;
+}
+
+.desc-char{
+    /* background-color: rebeccapurple; */
+    width: 100%;
+    height: 35%;
+    font-family: inter;
+    color: white;
+    /* font-size: 1rem; */
+    font-size: 1.1vw;
+    font-weight: 300;
+    display: flex;
+    align-items: flex-end;
+    margin-top: calc(2vw + 4%);
+}
+
+@media screen and (max-width: 1025px){
+    /* .platforms-jumbotron{
+        margin-top: 1%;
+        width: 50%;
+        height: 20%;
+    } */
+
+    .info-kiri, .info-kanan{
+        font-size: 1.5rem;
+    }
+
+    .title-feature{
+        font-size: 2rem;
+    }
+
+    .content-weapon{
+        height: 55%;
+    }
+
+  
+
+}
+
+@media screen and (max-width: 1210px){
+    /* .bg-maps-char:nth-child(1){
+        height: 100%;
+    } */
+
+    .bg-maps-char:nth-child(1){
+        background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetHome/mondstadt.png?raw=true);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+    }
+    
+}
+
+@media screen and (max-width: 770px) {
+    /* .platforms-jumbotron{
+        margin-top: 1%;
+        width: 70%;
+        height: 25%;
+    } */
+
+    .info-kiri, .info-kanan{
+        font-size: 1rem;
+    }
+
+    .title-feature{
+        font-size: 1.5rem;
+    }
+
+    .content-weapon{
+        height: 45%;
+    }
+
+    .maps-char-center{
+        font-size: calc(3vw + 10%);
+    }
+
+    /* .container-character{
+        height: calc(39vw - 5%);
+        width: 80%;
+        background-color: #888888;
+        margin-top: -2vw;
+        display: flex;
+        position: relative;
+    } */
+
+    .container-character{
+        /* height: 65%; */
+        /* height: 80%; */
+        margin-top: calc(-5vw + 10px);
+        height: calc(64vw + 10%);
+        /* width: calc(31vw - 0.1%); */
+
+        /* background-color: #888888; */
+        display: flex;
+        /* flex-flow: column; */
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .desc-dehya{
+        display: block;
+        position: absolute;
+        /* background-color: red; */
+        right: 0;
+        top: 0;
+        z-index: 10;
+        height: 50%;
+        /* margin-top: 4vw; */
+        /* margin-top: calc(5vw - 9px); */
+    }
+
+    .desc-mika{
+        display: block;
+        position: absolute;
+        /* background-color: black; */
+        right: 0;
+        /* bottom: 30px; */
+        bottom: 0; 
+        z-index: 10;
+        height: 50%;
+        /* margin-top: 100vw; */
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    
+
+    .platforms-jumbotron{
+        margin-top: 1%;
+        width: 60%;
+        height: 10%;
+    }
+
+    .start-journey{
+        font-size: 1.2rem;
+    }
+    
+    .open-world{
+        margin-top: 0.5%;
+        font-size: 0.7rem;
+    }
+
+    .info-kiri, .info-kanan{
+        font-size: 1rem;
+    }
+
+    .title-feature{
+        font-size: 0.8rem;
+    }
+
+    .content-weapon{
+        flex-direction: column;
+        height: 80%;
+        width: 100%;
+        align-items: center;
+    }
+
+    .judul-weapon, .judul-character{
+        height: 15%;
+        width: 70%;
+    }
+
+    .weapon-kanan,.weapon-kiri{
+        height: 70%;
+        width: 80%;
+    }
+
+    .maps-char-center{
+        font-size: calc(5vw + 10%);
+    }
+}

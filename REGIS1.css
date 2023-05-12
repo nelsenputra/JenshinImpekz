@@ -1,0 +1,518 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: calc(5px + 1vw);
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: calc(5px + 1vw);
+}
+
+/* ----------FONT---------- */
+@font-face {
+    font-family: Inter;
+    src: url(asset/interFont.ttf);
+}
+
+@font-face {
+    font-family: Gen;
+    src: url(assetLG/GENSHIN\ FONT.ttf);
+}
+
+input[type="number"]::-webkit-inner-spin-button{
+    display: none;
+}
+
+/* ----------UTAMA---------- */
+.utama{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/Login_SignUp/assetLG/REGISTER%20PAGE%20BACKGROUND1.png?raw=true);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* ----------KONTEN---------- */
+.konten{
+    /* background-color: blue; */
+    display: flex;
+    /* margin-left: 5%; */
+    max-width: 90%;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+/* ----------KIRI---------- */
+.kiri{
+    /* background-color: green; */
+    /* width: 41vw; */
+    width: calc(41vw + 2rem);
+    height: 100%;
+    /* align-self: center; */
+}
+.logo{
+    /* background-color: yellow; */
+    width: 100%;
+    margin: calc(+40vh - 33%) 0 0 0; 
+}
+.logo img{
+    margin: 0 calc(-30vw + 60%) -15% calc(-30vw + 60%);
+    /* background-color: red; */
+    max-width: 50vw;
+}
+.teksLog{
+    /* background-color: yellow; */
+    font-family: Gen;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+h1{
+    font-size: calc(2.2vw + 0.1rem);
+}
+h2{
+    font-size: calc(1.2vw + 0.05rem);
+}
+
+/* ----------KANAN---------- */
+.kanan{
+    background:rgba(255, 255, 255, 0.65);
+    width: 40%;
+    height: 100%;
+    font-family: Inter;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+.kanan .ata{
+    /* background-color: grey; */
+    width: 80%;
+    height: calc(3vw + 1.5%);
+    /* margin: calc(-10% + 25vh) calc(-5.5vw + 25%) 0 calc(-5.5vw + 25%); */
+}
+.panah img{
+    /* background-color: aqua; */
+    max-width: 100%; 
+    display:block; 
+    margin-top: -2.5vw;
+}
+h3{
+    font-size: calc(2.5vw + 0.2rem);
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    font-family: Inter;
+}
+
+.tenga{
+    /* background-color: brown; */
+    /* height: calc(22.5vw + 3%); */
+    /* width: 150vw; */
+    /* margin: 5% calc(-5.5vw + 25%) 0 calc(-5.5vw + 25%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 5vh;
+    height: 100%; */
+}
+
+/* .form{
+    gap: 5vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#pp{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 150%;
+} */
+
+.input-email{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: max-content;
+    margin-bottom: 3px;
+}
+
+.input-name{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: max-content;
+}
+.input-password{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: max-content;
+}
+.input-age{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: max-content;
+}
+
+.tenga form input{
+    width: 100%;
+    /* margin-bottom: 0.5%; */
+    padding: 1.2% 2.5%;
+    font-size: 1.1rem;
+}
+
+.cek{
+    display: flex;
+    width: 85%;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cek1{
+    /* background-color: blue; */
+    width: 5%;
+    height: 3vh;
+    margin-top: 3%;
+    text-align: left;
+}
+.errcek{
+    display: flex;
+    align-items: flex-start;
+}
+
+.tenga .cek2{
+    /* background-color: red; */
+    width: 26vw;
+    height: 5vh;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    text-align: left;
+    font-size: 1rem;
+    font-size: calc(0.3rem + 1vw);
+}
+
+.input-name #errorName{
+    font-size: 1rem;
+    margin-bottom: 2%;
+    font-family: Inter;
+}
+.input-email #errorEmail{
+    font-size: 1rem;
+    margin-bottom: 2%;
+    font-family: Inter;
+}
+.input-password #errorPass{
+    font-size: 1rem;
+    margin-bottom: 2%;
+    font-family: Inter;
+}
+.input-age #errorAge{
+    font-size: 1rem;
+    margin-bottom: 2%;
+    font-family: Inter;
+}
+.cek #errorCheck{
+    /* background-color: black; */
+    margin-top: 2%;
+    font-size: 1rem;
+    height: max-content;
+    margin-left: 1%;
+    font-family: Inter;
+}
+
+.Playfor{
+    width: 100%;
+    height: 5vh;
+}
+.tenga .Playfor button{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: black;
+    margin-top: 8%;
+    font-family: Inter;
+    font-size: 1.2rem;
+}
+
+
+
+.bawa{
+    /* background-color: burlywood; */
+    display: flex;
+    justify-content: space-between;
+    font-family: Inter;
+    width:80%;
+    justify-content: center;
+    text-align: center;    
+    margin: 1.5% calc(-5.5vw + 25%) 0 calc(-5.5vw + 25%);
+}
+
+.bawa .return a{
+    font-size: calc(1vw + 0.09rem);
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+
+
+
+
+
+/* ----------MEDIA SCREEN---------- */
+@media screen and (max-width: 430px){
+
+    .konten{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .kiri{
+        height: 20%;
+    }
+
+    .logo{
+        margin: 0;
+    }
+
+    .kanan{
+        height: 60%;
+        width: 60%;
+    }
+
+    .tenga{
+        width: 80%;
+    }
+
+    .form{
+        width: 100%;
+    }
+}
+/* 
+@media screen and (max-width: 1440px){
+
+    .tenga{
+        width: 85%;
+        height: 43%;
+        margin-left: 3.5rem;
+        margin-top: 4rem;
+    }
+    
+    form input{
+        background-color: white;
+        width: 100%;
+        height: 5%;
+        margin-bottom: 2%;
+        padding: 2% 2.5%;
+        font-size: 1.4rem;
+    }
+
+    .cek1{
+        background-color: blue;
+        width: 10%;
+        height: 30%;
+        margin-top: 3%;
+        text-align: left;
+    }
+
+    .cek2{
+        background-color: blue;
+        width: 200%;
+        font-size: 1.2rem;
+        margin-bottom: 1%;
+    }
+
+    .Playfor button{
+        width: 100%;
+        height: 3rem;
+    }
+    
+
+    .input-name #errorName{
+        font-size: 1rem;
+        margin-bottom: 2%;
+    }
+    .input-email #errorEmail{
+        font-size: 1rem;
+        margin-bottom: 2%;
+    }
+    .input-password #errorPass{
+        font-size: 1rem;
+        margin-bottom: 2%;
+    }
+    .input-age #errorAge{
+        font-size: 1rem;
+        margin-bottom: 2%;
+    }
+    .cek #errorCheck{
+        background-color: black;
+        font-size: 1rem;
+        margin-bottom: %;
+    }
+
+} */
+/* 
+@media screen and (max-width: 1024px){
+
+    .kanan .tenga{
+        width: 80%;
+        height: 37%;
+        margin-left: 9.5%;
+        margin-top: 7%;
+    }
+
+    form input{
+        width: 100%;
+        height: 4%;
+        font-size: 0.9rem;
+    }
+
+    .cek2{
+        background-color: rebeccapurple;
+        width: 200%;
+        font-size: 0.9rem;
+    }
+
+    .cek1{
+        width: 5%;
+        height: 0.5%;
+        text-align: left;
+    }
+
+    .Playfor button{
+        width: 100%;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+
+    .input-name #errorName{
+        font-size: 0.8rem;
+    }
+    .input-email #errorEmail{
+        font-size: 0.8rem;
+    }
+    .input-password #errorPass{
+        font-size: 0.8rem;
+    }
+    .input-age #errorAge{
+        font-size: 0.8rem;
+    }
+    .cek #errorCheck{
+       font-size: 0.8rem; 
+       margin-top: -2%;
+    }
+
+} */
+/* 
+@media screen and (max-width: 768px){
+
+
+
+    .input-name #errorName{
+        font-size: 0.7rem;
+    }
+    .input-email #errorEmail{
+        font-size: 0.7rem;
+    }
+    
+    .input-password #errorPass{
+        font-size: 0.7rem;
+    }
+    .input-age #errorAge{
+        font-size: 0.7rem;
+    }
+    .cek #errorCheck{
+        font-size: 0.7rem; 
+        margin-top: -5%;
+        margin-left: 2%;
+    }
+    .bawa{
+        margin-top: -3%;
+    }
+
+} */
+/* 
+@media screen and (max-width: 426px){
+
+    .kanan .tenga{
+        width: 80%;
+        height: 33%;
+        margin-left: 10%;
+    }
+
+    .tenga form input{
+        width: 100%;
+        height: 4%;
+        font-size: 0.6rem;
+        margin-bottom: 1%;
+    }
+
+    .tenga .cek1{
+        width: 5%;
+        height: 1%;
+        margin-top: 1%;
+        text-align: left;
+        font-size: 0.4rem;
+    }
+
+    .tenga .cek2{
+        width: 200%;
+        font-size: 0.55rem;
+    }
+
+    .tenga .Playfor button{
+        width: 100%;
+        height: 1.4rem;
+        font-size: 0.55rem;
+    }
+
+    .input-name #errorName{
+        font-size: 0.55rem;
+    }
+    .input-email #errorEmail{
+        font-size: 0.55rem;
+    }
+    
+    .input-password #errorPass{
+        font-size: 0.55rem;
+    }
+    .input-age #errorAge{
+        font-size: 0.55rem;
+    }
+    .cek #errorCheck{
+       font-size: 0.55rem;
+       margin-top: -13%;
+       margin-bottom: 5%;
+    }
+
+    .kanan .bawa{
+        margin-top: -10%;
+    }
+
+}
+
+ */

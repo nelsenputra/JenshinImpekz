@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-y: hidden; */
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(asset/interFont.ttf);
+}
+
+@font-face {
+    font-family: Gen;
+    src: url(asset/genshinFont.ttf);
+}
+
+body{
+    font-family: Inter;
+}
+
+/* ==== */
+.layar1 .atas{
+    width: 100%;
+    height: calc(8vw - 1px);
+    font-size: calc(2vw - 1%);
+    /* background-color: yellow; */
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.foot{
+    width: 100%;
+    height: calc(30vw - 20px);
+    /* height: calc(45.3vh - 1%); */
+    background-color:black;
+    overflow-y: hidden;
+
+
+    width: 100%;
+    background-size: cover;
+    /* background-position: center; */
+}
+
+.layar1{
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* background-color: blue; */
+}
+
+.atas{
+    width: 100%;
+    /* background-color: blue; */
+}
+
+.atas a i{
+    width: 100%;
+    height: 90%;
+    /* background-color: red; */
+    justify-content: space-between;
+    padding-left: calc(1vw + 5%);
+    /* margin-left: 100%;
+    margin-right: 40%; */
+    color: #888888;
+}
+
+.atas a i:hover{
+    color: white;
+}
+
+.tengah{
+    width: 100%;
+    height: calc(13vw - 3px);
+    /* background-color: bisque; */
+}
+
+.privacy{
+    display: flex;
+    width: 100%;
+    height: calc(2vw - 1%);
+    /* background-color: rebeccapurple; */
+    justify-content: center;
+    gap: calc(2vw - 1%);
+    color: white;
+    font-size: calc(0.5vw + 0.6vw);
+    text-align: center;
+    align-items: center;
+}
+
+.PP a{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.ToS a{
+    width: 100%;
+    height: 50%;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.CU a{
+    width: 100%;
+    height: 50%;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.AU a{
+    width: 100%;
+    height: 50%;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.privacy a{
+    border-bottom: transparent solid 1px;
+}
+
+.privacy a:hover{
+    border-bottom: white solid 1px;
+}
+
+
+.playStation{
+    width: 80%;
+    height: 70%;
+    margin-left: 10%;
+    padding-top: 2%;
+    /* background-color: black; */
+    /* color: white; */
+    color: rgba(255, 255, 255, 0.6);
+    justify-content: center;
+    text-align: center;
+    font-size: calc(1.2vw - 1%);
+}
+
+.copyright{
+    width: 100%;
+    height: 15%;
+    /* background-color: blue; */
+    color: white;
+    justify-content: center;
+    text-align: center;
+    font-size: calc(1vw - 1%);
+}
+
+.bawah{
+    display: flex;
+    width: 100%;
+    height: calc(3vw - 1px);
+    justify-content: space-between;
+    /* padding-top: -1%; */
+    /* background-color: blueviolet; */
+    align-items: center;
+    overflow: hidden;
+}
+
+.foot-Logo{
+    /* background-color: red; */
+    width: calc(9vw + 1%);
+    height: calc(5vw - 5%);
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 1%; */
+}
+
+.foot-Hoyoverse{
+    /* background-color: red; */
+    width: calc(12vw + 1%);
+    height: calc(11vw - 5%);
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 1%; */
+}
+
+@media screen and (max-width: 430px) {
+    .foot{
+        height: calc(35vw - 20px)
+    }
+}
+

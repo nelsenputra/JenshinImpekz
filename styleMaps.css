@@ -1,0 +1,946 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-size: calc(5px + 1vw); */
+}
+
+@font-face {
+    font-family: inter;
+    src: url(asset/interFont.ttf);
+}
+
+.all-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+
+/* ------------------------------ */
+.side-bar{
+    /* background-color: cornflowerblue; */
+    /* width: calc(3vw + 16%); */
+    width: 15%;
+    height: calc(20vw + 17%);
+    /* height: 50%; */
+    position: fixed;
+    top: 6vw;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 1vw; */
+    /* margin: calc(10vw + 1%) 0; */
+}
+
+.container-sideBar ul li{
+    /* background-color: red; */
+    list-style: none;
+    text-align: end;
+    font-size: 1.3rem;
+    color: white;
+    font-family: inter;
+    font-weight: 250;
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    width: 9vw;
+    height: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.side-bar .container-sideBar ul li a{
+    /* background-color: blue; */
+    text-decoration: none;
+    color: white;
+    font-family: inter;
+    font-weight: 300;
+    margin-right: 22%;
+    transition: ease-in;
+    font-size: calc(0.8vw + 0.2rem);
+}
+
+.container-sideBar{
+    /* background-color: greenyellow; */
+    flex-basis: 9.6px;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    /* margin-top: 28%; */
+    /* margin-top: calc(7vw - 10%); */
+}
+
+.side-bar .container-sideBar ul{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    /* margin-left: -5%; */
+    /* padding-top: 50px; */
+    margin-top: 14vh;
+    gap: 5.5%;
+    /* margin-top: 45.6%; */
+    /* margin-top: calc(8vh + 9%); */
+    /* gap: calc(3vw - 5.5%); */
+    /* margin-top: calc(90px - 40%); */
+    /* margin-top: calc(1vh + 0.01rem); */
+    margin-right: -18%;
+    width: 100%;
+    height: 80%;
+}
+
+.container-line{
+    /* background-color: orange; */
+    flex-basis: 50px;
+}
+
+.side-bar .container-line img{
+    /* background-color: black; */
+    width: -8vw;
+    /* height: 100%; */
+    height: 100%;
+    /* margin-right:6%; */
+    /* margin-left: calc(-4vw - 10%); */
+}
+/* -------------------------- */
+
+.maps{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.teyvat{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetMaps/teyvatBG.png?raw=true);
+    /* background-color: red; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.container-teyvat{
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    width: 100%;
+    height: 80%;
+}
+
+.content-teyvat{
+    /* background-color: darkgreen; */
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.vector-teyvat{
+    /* background-color: chartreuse; */
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vector-teyvat img{
+    /* background-color: red; */
+    width: 2%;
+    height: 13%;
+}
+
+.judul{
+    /* background-color: chocolate; */
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    font-family: inter;
+    font-size: 5rem;
+}
+
+.garis-teyvat{
+    /* background-color: goldenrod; */
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.garis-teyvat img{
+    /* background-color: blue; */
+    width: 10%;
+    height: 50%;
+}
+
+.teks-teyvat{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 25%;
+
+    text-align: center;
+    font-family: inter;
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-weight: 250;
+}
+
+.section-maps{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+.section-maps:nth-child(2){
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetMaps/mondstadtBG.png?raw=true);
+}
+
+.section-maps:nth-child(3){
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetMaps/liyueBG.png?raw=true);
+}
+
+.section-maps:nth-child(4){
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetMaps/inazumaBG.png?raw=true);
+}
+
+.section-maps:nth-child(5){
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetMaps/sumeruBG.png?raw=true);
+}
+
+.container-maps{
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    width: 100%;
+    height: 80%;
+}
+
+.content-maps{
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 75%;
+}
+
+.logo-maps{
+    /* background-color: cadetblue; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.content-maps .logo-maps img{
+    margin: calc(+40vh - 33%) 0 0 0;
+    width: calc(5vw + 1.5%);
+    height: calc(6.5vw - 1.5%);
+}
+
+.content-maps .judul-maps{
+    /* background-color: darkslategray; */
+    width: 100%;
+    height: calc(4vw - 0.5%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inter;
+    color: white;
+    font-size: 2.5vw;
+    font-weight: 300;
+    gap: 1%;
+    margin-top: 1%;
+}
+
+.judul-maps img{
+    /* background-color: rebeccapurple; */
+    width: 8%;
+    height: 19%;
+}
+
+.content-maps .teks-maps{
+    /* background-color: palevioletred; */
+    width: 60%;
+    height: 6vw;
+    font-size: calc(1vw - 3%);
+    text-align: center;
+    font-family: inter;
+    color: white;
+    font-weight: 250;
+    text-shadow: 0 0 10 rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5%;
+    margin-left: 20%;
+}
+
+.moreInfo-maps{
+    /* background-color: blueviolet; */
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moreInfo-maps img{
+    width: 4.5%;
+    height: 55%;
+}
+
+.moreInfo-maps img:hover{
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); */
+    filter: drop-shadow(0 0 8px white);
+    transition: 200ms;
+}
+
+.more-info{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    overflow: hidden;
+    display: none;
+}
+
+.container-moreInfo{
+    /* background-color: aqua; */
+    width: 60%;
+    height: 100%;
+    margin-left: 20%;
+} 
+
+.header-moreInfo{
+    /* background-color: chocolate; */
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.namaRegion{
+    background-color: rgba(136, 136, 136, 0.5);
+    width: 52vw;
+    height: 8vh;
+    color: white;
+    font-family: inter;
+    font-size: 3.5rem;
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+    font-weight: 350;
+}
+
+.exit-info{
+    background-color: rgba(136, 136, 136, 0.5);
+    width: 4vw;
+    height: 8vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-right: 5%;
+}
+
+.exit-info img{
+    /* background-color: brown; */
+    width: 50%;
+    height: 50%;
+}
+
+.content-info-container {
+    /* background-color: blue; */
+    width: 52vw;
+    height: 75%;
+    overflow: scroll;
+    padding-right: 2%;
+}
+
+.content-info{
+    /* background-color: darksalmon; */
+    width: 100%;
+    height: 100%;
+}
+
+.judul-content{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 15%;
+    color: white;
+    font-family: inter;
+    font-size: 2.5rem;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10%;
+}
+
+.judul-content img{
+    /* background-color: yellow; */
+    width: 100%;
+    height: 5%;
+}
+
+.desc-content{
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-family: inter;
+}
+
+.gambar-content{
+    width: 100%;
+    height: fit-content;
+}
+
+.gambar-content img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* ------------MEDIA SCREENN------------ */
+@media screen and (max-width: 1440px){
+    /* Teyvat */
+    .judul{
+        font-size:5rem;
+    }
+
+    .garis-teyvat img{
+        width: 9%;
+        height: 44%;
+    }
+
+    .teks-teyvat{
+        font-size: 1.3rem;
+    }
+
+
+    /* Side Bar */
+    /* .side-bar{
+        width: 16vw;
+        height: 70vh;
+        top: 100px;
+    } */
+    /* .container-sideBar ul li a{
+        font-weight: 300;
+        font-size: 1.4rem;
+        margin-right: 40px;
+    } */
+    /* .container-sideBar ul li{
+        font-size: 130%;
+        font-weight: 250;
+        width: 14vw;
+        height: 4vh;
+        padding-left: 10px;
+    } */
+    /* .container-sideBar{
+        flex-basis:50%;
+        padding-top: 109px;
+    }
+    .container-sideBar ul{
+        margin-top:9.5%;
+        gap: 28.9px;
+    } */
+    /* .container-line{
+        flex-basis: 9px;
+    } */
+    /* .container-line img{
+        background-color: black;
+        width: 1.9%;
+        margin-left: -30px;
+    } */
+
+    /* More Info */
+    .namaRegion{
+        width: 52vw;
+        height: 8vh;
+        font-size: 3.5rem;
+        padding-left: 3%;
+    }
+    .exit-info{
+        background-color: rgba(136, 136, 136, 0.5);
+        width: 4.5vw;
+        height: 8vh; 
+        margin-right: 4%;
+    }
+    .content-info-container {
+        width: 52vw;
+        height: 75%;
+        padding-right: 2%;
+    }
+    
+    .judul-content{
+        width: 100%;
+        height: 14%;
+        font-size: 3rem;
+        gap: 10%;
+    }
+    .desc-content{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    /* Teyvat */
+    .judul{
+        font-size:4rem;
+    }
+    .garis-teyvat img{
+        height: 40%;
+    }
+    .teks-teyvat{
+        font-size: 0.9rem;
+    }
+
+    /* Maps Umum */
+    .logo-maps img{
+        width: 9%;
+        height: 45%;
+    }
+    .judul-maps{
+        font-size: 3rem;
+    }
+    .teks-maps{
+        font-size: 0.9rem;
+        height: 20%;
+    }
+    .moreInfo-maps img{
+        width: 5%;
+        height: 50%;
+    }
+
+    /* ------------------------------ */
+    .side-bar{
+        /* background-color: cornflowerblue; */
+        /* width: calc(3vw + 16%); */
+        width: 20%;
+        height: calc(25vw + 17%);
+        top: 9vh;
+
+    }
+
+    .container-sideBar ul li{
+        /* background-color: red; */
+        font-size: 1.3rem;
+        font-weight: 250;
+        width: 14.4vw;
+        height: 3vw;
+    }
+
+    .side-bar .container-sideBar ul li a{
+        /* background-color: blue; */
+        margin-right: 21%;
+        font-size: calc(1vw + 0.2rem);
+    }
+
+    .container-sideBar{
+        /* background-color: greenyellow; */
+        /* width: vw; */
+        /* margin-top: 28%; */
+        /* margin-top: calc(7vw - 10%); */
+    }
+
+    .side-bar .container-sideBar ul{
+        /* background-color: aqua; */
+        margin-top: 12vh;
+        gap: 1.3vw;
+        margin-right: -18%;
+        width: 15vw;
+        height: 70%;
+    }
+
+    .container-line{
+        /* background-color: orange; */
+        flex-basis: 18px;
+    }
+
+    .side-bar .container-line img{
+        /* background-color: black; */
+        width: -8vw;
+        height: 100%;
+    }
+/* -------------------------- */
+
+    /* Side Bar */
+    /* .side-bar{
+        width: 16vw;
+        height: 70vh;
+        top: 100px;
+    }
+    .container-sideBar ul li a{
+        font-weight: 300;
+        font-size: 1rem;
+        margin-right: 40px;
+    } */
+    /* .container-sideBar ul li{
+        font-size: 130%;
+        font-weight: 250;
+        width: 14vw;
+        height: 4vh;
+        padding-left: 10px;
+    } */
+    /* .container-sideBar{
+        flex-basis:50%;
+        padding-top: 83.5px;
+    }
+    .container-sideBar ul{
+        margin-top:9.5%;
+        gap: 20px;
+    } */
+    /* .container-line{
+        flex-basis: 15px;
+    }
+    .container-line img{
+        width: 2vw;
+        margin-left: -30px;
+    } */
+
+    /* More Info */
+    .namaRegion{
+        width: 52vw;
+        height: 7vh;
+        font-size: 3rem;
+        padding-left: 3%;
+    }
+    .exit-info{
+        background-color: rgba(136, 136, 136, 0.5);
+        width: 4.5vw;
+        height: 7vh; 
+        margin-right: 2%;
+    }
+    .content-info-container {
+        width: 52vw;
+        height: 75%;
+        padding-right: 3%;
+    }
+    .judul-content{
+        width: 100%;
+        height: 14%;
+        font-size: 2.4rem;
+        gap: 10%;
+    }
+    .desc-content{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    /* Teyvat */
+    .judul{
+        font-size:3rem;
+    }
+    .garis-teyvat img{
+        height: 35%;
+    }
+    .teks-teyvat{
+        font-size: 0.65rem;
+    }
+
+
+    /* Maps Umum */
+    .logo-maps img{
+        width: 8%;
+        height: 35%;
+    }
+    .judul-maps{
+        height: 11%;
+        font-size: 2rem;
+    }
+    .teks-maps{
+        font-size: 0.7rem;
+        height: 18%;
+    }
+    .moreInfo-maps img{
+        /* background-color: red; */
+        width: 4.5%;
+        height: 35%;
+    }
+
+        /* ------------------------------ */
+        .side-bar{
+            /* background-color: cornflowerblue; */
+            /* width: calc(3vw + 16%); */
+            width: 20%;
+            height: calc(25vw + 17%);
+            top: 9vh;
+    
+        }
+    
+        .container-sideBar ul li{
+            /* background-color: red; */
+            font-size: 1.3rem;
+            font-weight: 250;
+            width: 14.4vw;
+            height: 3vw;
+        }
+    
+        .side-bar .container-sideBar ul li a{
+            /* background-color: blue; */
+            margin-right: 21%;
+            font-size: calc(1vw + 0.2rem);
+        }
+    
+        .container-sideBar{
+            /* background-color: greenyellow; */
+            /* width: vw; */
+            /* margin-top: 28%; */
+            /* margin-top: calc(7vw - 10%); */
+        }
+    
+        .side-bar .container-sideBar ul{
+            /* background-color: aqua; */
+            margin-top: 10.8vh;
+            gap: 1.4vw;
+            margin-right: -18%;
+            width: 15vw;
+            height: 70%;
+        }
+    
+        .container-line{
+            /* background-color: orange; */
+            flex-basis: 18px;
+        }
+    
+        .side-bar .container-line img{
+            /* background-color: black; */
+            width: -8vw;
+            height: 100%;
+        }
+    /* -------------------------- */
+
+
+    /* Side Bar */
+    /* .side-bar{
+        width: 16vw;
+        height: 70vh;
+        top: 40px;
+    }
+    .container-sideBar ul li a{
+        font-weight: 300;
+        font-size: 0.8rem;
+        margin-right: 30px;
+    } */
+    /* .container-sideBar ul li{
+        font-size: 130%;
+        font-weight: 250;
+        width: 14vw;
+        height: 4vh;
+        padding-left: 10px;
+    }
+    .container-sideBar{
+        flex-basis:50%;
+        padding-top: 80px;
+    } */
+    /* .container-sideBar ul{
+        margin-top:10%;
+        gap: 15px;
+    }
+    .container-line{
+        flex-basis: 15px;
+    }
+    .container-line img{
+        width: 2vw;
+        margin-top: 20px;
+        margin-left: -20px;
+    } */
+    
+    /* More Info */
+    .namaRegion{
+        width: 52vw;
+        height: 6.5vh;
+        font-size: 2.2rem;
+        padding-left: 3%;
+    }
+    .exit-info{      
+        width: 4.5vw;
+        height: 6.5vh; 
+        margin-right: 2%;
+    }
+    .content-info-container {
+        width: 52vw;
+        height: 75%;
+        padding-right: 3%;
+    }
+    .judul-content{
+        font-size: 1.8rem;
+        gap: 10%;
+    }
+    .desc-content{
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 426px){
+    /* Teyvat */
+    .judul{
+        font-size: 2.5rem;
+    }
+    .garis-teyvat img{
+        margin-bottom: 3%;
+        width: 15%; 
+        height: 30%;
+    } 
+    .teks-teyvat{
+        font-size: 0.55rem;
+    } 
+    .vector-teyvat img{
+        /* background-color: red; */
+        width: 2%;
+        height: 9%;
+    }
+    
+
+    /* Maps */
+    .content-maps .logo-maps img{
+        /* background-color: red; */
+        width: 8%;
+        height: 15%;
+    }
+    .content-maps .judul-maps{
+        /* background-color: red; */
+        height: calc(8vw - 1%);
+        font-size: calc(5vw + 3px);
+    }
+    .judul-maps img{
+        width: 7.5%;
+        height: 7%;
+    }
+    .content-maps .teks-maps{
+        /* background-color: blueviolet; */
+        font-size: calc(2vw + 5%);
+        height: 16vw;
+        width: 70%;
+        margin-left: 15%;
+    }
+    .moreInfo-maps img{
+        width: 7%;
+        height: 30%;
+    }
+
+
+    /* ------------------------------ */
+    .side-bar{
+        /* background-color: cornflowerblue; */
+        /* width: calc(3vw + 16%); */
+        width: 20%;
+        height: calc(25vw + 17%);
+        top: 20vh;
+
+    }
+
+    .container-sideBar ul li{
+        /* background-color: red; */
+        font-size: 1.3rem;
+        font-weight: 250;
+        width: 15vw;
+        height: 3vw;
+    }
+
+    .side-bar .container-sideBar ul li a{
+        /* background-color: blue; */
+        margin-right: 21%;
+        font-size: calc(1vw + 0.2rem);
+    }
+
+    .container-sideBar{
+        /* background-color: greenyellow; */
+        /* width: vw; */
+        /* margin-top: 28%; */
+        /* margin-top: calc(7vw - 10%); */
+    }
+
+    .side-bar .container-sideBar ul{
+        /* background-color: aqua; */
+        margin-top: 7.9vh;
+        gap: 3vw;
+        margin-right: -18%;
+        width: 15vw;
+        height: 70%;
+    }
+
+    .container-line{
+        /* background-color: orange; */
+        flex-basis: 18px;
+    }
+
+    .side-bar .container-line img{
+        /* background-color: black; */
+        width: -8vw;
+        height: 100%;
+    }
+/* -------------------------- */
+   
+   
+    /* More Info */
+    .namaRegion{
+        width: 52vw;
+        height: 5.2vh;
+        font-size: 1.8rem;
+        padding-left: 3%;
+    }
+    .exit-info{       
+        width: 4.5vw;
+        height: 5.2vh; 
+        width: 5.2vw;
+        margin-right: 1%;
+    }
+    .exit-info img{
+        width: 50%;
+        height: 50%;
+    }
+    .content-info-container {
+        width: 52vw;
+        height: 75%;
+        padding-right: 4%;
+    }
+    .content-info{
+        width: 100%;
+        height: 100%;
+    }
+    .judul-content{
+        font-size: 1.4rem;
+        gap: 10%;
+    }
+    .desc-content{
+        font-size: 0.5rem;
+    }
+
+}

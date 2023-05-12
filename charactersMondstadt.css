@@ -1,0 +1,9 @@
+.mondstadt-bar{
+    background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,0.2),rgba(0,0,0,0.6));
+    transition: 1000ms ease-out;
+}
+
+.container-sideBar ul .mondstadt-bar{
+    padding-left: 80px;
+    transition: 500ms ease-out;
+}

@@ -1,0 +1,552 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* scroll-behavior: smooth;
+    overflow-x: scroll; */
+}
+
+/* *::-webkit-scrollbar{
+    display: none;
+} */
+
+@font-face {
+    font-family: genshin;
+    src: url(asset/genshinFont.ttf);
+}
+
+@font-face {
+    font-family: inter;
+    src: url(asset/interFont.ttf);
+}
+
+@font-face {
+    font-family: inria;
+    src: url(asset/inriaSerifFontBold.ttf);
+}
+
+.jumbotronAboutGame{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetAboutGame/jumbotronAboutGame.png?raw=true);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    /* background-size: 100% 100%; */
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+}
+
+.available{
+    /* background-color: aqua; */
+    font-family: genshin;
+    color: white;
+    font-size: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    /* background-color: aqua; */
+    width: 55%;
+    height: 30%;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+.avail{
+    /* background-color: aquamarine; */
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+/* kelar ^^^^ ud responsive juga ^^^^ */
+
+.stickyBackground{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetAboutGame/stickyBackground.png?raw=true);
+    width: 100%;
+    height: 100%;
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container{
+    /* background-color: hotpink; */
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+.games-feature{
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.judul-feature{
+    /* background-color: brown; */
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#arrowTitle{
+    height: 100%;
+    width: 100%;
+}
+
+.arrow-title-feature-left{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    height: 7%;
+}
+
+.title-feature{
+    font-family: inter;
+    font-weight: 300;
+    letter-spacing: -0.1rem;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 0;
+    text-shadow: 0 0 20px rgba(0,0,0, 0.5);
+}
+
+.arrow-title-feature-right{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    height: 7%;
+}
+
+.section-about{
+    /* background-color: bisque; */
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    /* align-self: center; */
+    align-items: center;
+    justify-content: center;
+}
+
+.content-about{
+    /* background-color: chocolate; */
+    display: flex;
+    width: 90%;
+    height: 80%;
+    justify-content: flex-end;
+    /* align-items: flex-end; */
+    align-items: center;
+    position: relative;
+}
+
+.content-about2{
+    /* background-color: chocolate; */
+    display: flex;
+    width: 90%;
+    height: 80%;
+    /* justify-content: flex-end; */
+    /* align-items: flex-end; */
+    align-items: center;
+    position: relative;
+}
+
+.content-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 70%;
+    background-size: 100% 100%;
+}
+
+.image1
+{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetAboutGame/content-img1.png?raw=true);
+}
+
+.image2{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetAboutGame/content-img2.png?raw=true);
+}
+
+.image3{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetAboutGame/content-img3.png?raw=true);
+}
+
+.image4{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetAboutGame/content-img4.png?raw=true);
+}
+
+.image5{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetAboutGame/content-img5.png?raw=true);
+}
+
+.content-desc{
+    /* background-color: antiquewhite; */
+    position: absolute;
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetAboutGame/content-desc1.png?raw=true);
+    background-size: 100% 100%;
+    width: 40%;
+    height: 60%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-desc2{
+    position: absolute;
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetAboutGame/content-desc1.png?raw=true);
+    background-size: 100% 100%;
+    width: 40%;
+    height: 60%;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc{
+    /* background-color: royalblue; */
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.desc-title{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    height: 30%;
+    font-family: inter;
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #654F42;
+}
+
+.desc-paragraph{
+    /* background-color: cadetblue; */
+    width: 95%;
+    height: 60%;
+    margin-top: 5%;
+    font-family: inter;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #78604B;
+    align-self: center;
+}
+
+.game-ss{
+    /* background-color: aliceblue; */
+    width: 100%;
+    height: 100vh;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    /* align-self: center; */
+    align-items: center;
+    justify-content: center;
+}
+
+.content-ss{
+    /* background-color: chocolate; */
+    display: flex;
+    width: 100%;
+    height: 80%;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+    align-items: center;
+}
+
+.arrow-left-ss{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetAboutGame/arrowLeftSS.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-color: cyan; */
+    width: 8%;
+    height: 20%;
+}
+
+.img-ss{
+    /* background-image: url(asset/AssetAboutGame/content-ss1.png); */
+    /* background-color: darksalmon; */
+    background-size: cover;
+    width: 80%;
+    height: 80%;
+    transition: all .3s ease-in;
+}
+
+.arrow-right-ss{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetAboutGame/arrowRightSS.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-color: cyan; */
+    width: 8%;
+    height: 20%;
+}
+
+.closing-aboutgame{
+    /* background-color: aqua; */
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.closing-container{
+    /* background-color: goldenrod; */
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.jenshin-logo{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/Login_SignUp/assetLG/JENSHIN%20IMPEKS%20LOGO.png?raw=true);
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    height: 20%;
+    background-repeat: no-repeat;
+}
+
+.platforms{
+    /* background-color: chocolate; */
+    width: 60%;
+    height: 57%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    /* justify-content: center; */
+    /* bottom: 0; */
+}
+
+.letsgo{
+    /* background-color: beige; */
+    width: 100%;
+    height: max-content;
+    font-family: inria;
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0 0 50px rgba(0,0,0, 0.8);
+}
+
+.multiple-platforms{
+    /* background-color: #654F42; */
+    width: 100%;
+    height: max-content;
+    font-family: inria;
+    color: white;
+    font-size: 1.563rem;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0 0 50px rgba(0,0,0, 0.8);
+}
+
+.ps{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetAboutGame/psLogo.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 40%;
+    height: 50%;
+}
+
+.apple{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetAboutGame/appleLogo.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 10%;
+    height: 20%;
+}
+
+.android{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetAboutGame/androidLogo.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 10%;
+    height: 20%;
+}
+
+.windows{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetAboutGame/windowsLogo.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 10%;
+    height: 20%;
+}
+
+@media screen and (max-width: 1025px) {
+    .avail{
+        font-size: 2.5rem;
+    }
+
+    .title-feature{
+        font-size: 1.8rem;
+    }
+
+    .section-about{
+        height: 70vh;
+    }
+
+    .desc-title{
+        font-size: 1.3rem;
+    }
+
+    .desc-paragraph{
+        font-size: 0.8rem;
+    }
+
+    .games-feature{
+        height: 20vh;
+    }
+
+    .game-ss{
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .avail{
+        font-size: 1.5rem;
+    }
+
+    #arrowTitle{
+        height: 90%;
+        width: 95%;
+    }
+
+    .judul-feature{
+        width: 80%;
+        height: 100%;
+    }
+
+    .title-feature{
+        font-size: 1.25rem;
+    }
+
+    .section-about{
+        height: 45vh;
+    }
+
+    .desc-title{
+        font-size: 1rem;
+    }
+
+    .desc-paragraph{
+        font-size: 0.5rem;
+    }
+
+    .game-ss{
+        height: 55vh;
+    }
+
+    .letsgo{
+        /* background-color: beige; */
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    
+    .multiple-platforms{
+        /* background-color: #654F42; */
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .platforms{
+        height: 35%;
+    }
+
+}
+
+@media screen and (max-width: 430px){
+    .avail{
+        font-size: 1rem;
+    }
+
+    #arrowTitle{
+        height: 500%;
+        width: 100%;
+    }
+
+    .title-feature{
+        font-size: 0.7rem;
+        letter-spacing: -0.05rem;
+    }
+
+    .judul-feature{
+        height: 40%;
+        width: 65%;
+    }
+
+    .games-feature{
+        height: 15vh;
+    }
+
+    .container{
+        /* background-color: hotpink; */
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .content-about,.content-about2{
+        width: 65%;
+    }
+
+    .section-about{
+        height: 25vh;
+    }
+
+    .desc-title{
+        font-size: 0.5rem;
+    }
+
+    .desc-paragraph{
+        font-size: 0.3rem;
+    }
+
+    .game-ss{
+        height: 35vh;
+    }
+
+    .games-feature{
+        height: 10vh;
+    }
+    
+    .closing-aboutgame{
+        height: 30vh;
+    }
+
+    .letsgo{
+        /* background-color: beige; */
+        width: 100%;
+        font-size: 1rem;
+    }
+    
+    .multiple-platforms{
+        /* background-color: #654F42; */
+        width: 100%;
+        font-size: 0.5rem;
+    }
+
+    .platforms{
+        height: 40%;
+    }
+}

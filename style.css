@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+}
+
+.logooo{
+    /* background-color: aqua; */
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/jenshinImpekzLogo.png?raw=true);
+    background-size: cover;
+    background-position: -2px 50%;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 12vh;
+    /* background-color: pink; */
+}
+
+@font-face {
+    font-family: inter;
+    src: url(asset/interFont.ttf);
+}
+
+body{
+    font-family: inter;
+    font-size: 1.125rem;
+    /* color: rgba(255, 255, 255, 0.8); */
+    overflow-x: hidden;
+}
+
+.header{
+    z-index: 1000;
+    position: relative;
+    width: fit-content;
+    overflow-x: hidden;
+}
+
+nav{
+    /* background-color: brown;  */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.tengaaa{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 30%;
+    /* background-color: black; */
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li{
+    list-style: none;
+}
+
+.aktif, .act{
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-weight: 600;
+    /* background-color: black; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 3px;
+    padding-right: 3px;
+    display: flex;
+    width: 100%;
+    border-bottom: solid 2px transparent;
+    border-top: solid 2px transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.aktif:hover{
+    color: white;
+    filter: drop-shadow(0 0 5px #0C65AF);
+    border-bottom: white solid 2px;
+    border-top: solid 2px transparent;
+}
+
+.inaktif{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    /* background-color: black; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 3px;
+    padding-right: 3px;
+    display: flex;
+    width: 100%;
+    border-bottom: #0C65AF solid 2px;
+    border-top: solid 2px transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.kanan button:hover{
+    background-color: #0C65AF;
+    color: white;
+}
+
+.bttn button{
+    padding: 15px 30px;
+    color: rgba(255, 255, 255, 0.8 );
+    background-color: rgba(12, 101, 175, 0.3);
+    border-radius: 2px;
+    border: white solid;
+    font-weight: 600;
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bttn button:hover{
+    background-color: #0C65AF;
+}
+
+.bttn button:hover .button{
+    color: white;
+}
+
+.button{
+    color: rgba(255, 255, 255, 0.8 );
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* hamburger menu */
+.menu-toggle{
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    /* background-color: black; */
+    align-items: center; 
+    position: relative;
+    overflow: hidden;
+}
+
+/* dia opacitynya 0 cmn buat tau apakah dia kepencet */
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 29px;
+    opacity: 0;
+    left: -6px;
+    top: -3px;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    /* background-color: #0C65AF; */
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 1px;
+    transition: all 0.5s;
+    
+}
+
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    background-color: white;
+    width: 20px;
+    transform: rotate(45deg) translate(0.5px, 0px);
+}
+.menu-toggle input:checked ~ span:nth-child(4){
+    background-color: white;
+    width: 20px;
+    transform: rotate(-45deg) translate(2.5px, -2px);
+}
+.menu-toggle input:checked ~ span:nth-child(3){
+    opacity: 0;
+    transform: scale(0);
+}
+
+.list-menu{
+    position: absolute;
+    width: 30%;
+    /* height: 100vh; */
+    /* background-color: grey; */
+    right: 0;
+    z-index: -1;
+    right: -200px;
+    transition: all ease 1000ms;
+    /* left: 100%; */
+    display: none;
+}
+
+.list-menu.slide{
+    transform: translateX(0);
+    /* display: block; */
+}
+
+/* responsive */
+@media screen and (max-width: 1040px) {
+    a{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    a{
+        font-size: 0.6rem;
+    }
+    
+    .bttn button{
+        padding: 5px 10px;
+    }
+    
+    .tengaaa{
+        width: 70%;
+    }
+    
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+    
+    .logooooo{
+        background-position: -4px 50%;
+        width: 140px;
+        height: 7vh;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .menu-toggle{
+        display: flex;
+    }
+    
+    
+    .list-menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 0%;
+        /* background-color: rgba(0, 0, 0, 0.35); */
+        right: 0;
+        top: 12vh;
+        right: -110px;
+        transition: all ease 1000ms;
+    }
+    
+    .menu-aktif{
+        position: fixed;
+        width: 30%;
+        right: 0;
+        transition: all ease 1000ms;
+    }
+    
+    .list-menu ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        list-style: none;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    .register{
+        display: none;
+    }
+
+    .bttn{
+        display: none;
+    }
+
+    .logooooo{
+        background-position: -4px 50%;
+        width: 250px;
+        height: 10vh;
+    }
+
+    /* .list-menu{
+        display: block;
+        transform: translateX(0);
+    } */
+}
+

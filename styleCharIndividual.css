@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: genshin;
+    src: url(asset/genshinFont.ttf);
+}
+
+@font-face {
+    font-family: inter;
+    src: url(asset/interFont.ttf);
+}
+
+.container-page{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetCharacters/individualBG1.jpg?raw=true);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.char {
+    /* background-color: antiquewhite; */
+    /* width: 75%; */
+    width: 1000px;
+    /* width: calc(60vw + 200px); */
+    /* height: 100%; */
+    height: 100vh;
+    z-index: 5;
+    position: absolute;
+    right: 0;
+}
+
+.kiri{
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    width: 60%;
+    height: 100%;
+    z-index: 7;
+}
+
+.back{
+    /* background-color: black; */
+    width: 100%;
+    height: 20%;
+    display: flex;
+    padding-left: 5%;
+}
+
+.back a{
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetCharacters/back.png?raw=true);
+    /* background-color: pink; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20%;
+    width: 7%;
+    align-self: flex-end;
+}
+
+.info{
+    /* background-color: cadetblue; */
+    width: 100%;
+    height: 70%;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+.garis-atas{
+    /* height: 1.5%; */
+    height: calc(0.65vw + 0.1%);
+    width: 30%;
+    background-color: #CDA474;
+    margin-bottom: 2%;
+}
+
+.nama{
+    /* background-color: red; */
+    /* font-size: 4.688rem; */
+    font-size: calc(4vw + 7%);
+    font-family: genshin;
+    color: white;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    /* letter-spacing: -3px; */
+    letter-spacing: calc(-3px + 0.1rem);
+}
+
+.element{
+    /* background-color: blue; */
+    /* width: 50.5%; */
+    /* height: 11.55%; */
+    width: calc(26vw + 10%);
+    height: calc(3vw + 5%);
+    background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetCharacters/bawahnama.png?raw=true);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 4%;
+    font-family: inter;
+    /* font-size: 1.25rem; */
+    font-size: calc(1.25vw + 18%);
+    color: black;
+    font-weight: 350;
+    /* letter-spacing: -1px; */
+    letter-spacing: calc(-1vw + 2%);
+}
+
+.element-img{
+    /* background-color: pink; */
+    width: 17%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#element-logo{
+    width: 60%;
+    height: 60%;
+}
+
+.desc{
+    margin-top: 5%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* width: 100%; */
+    width: calc(30vw + 40%);
+    height: max-content;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+}
+
+.vector{
+    flex-basis: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vector-img{
+    /* background-color: black; */
+    width: 80%;
+}
+
+.desc .text{
+    /* background-color: red; */
+    font-family: inter;
+    color: white;
+    flex-basis: 95%;
+    font-weight: 300;
+    padding-left: 3%;
+    /* font-size: 1.3vw; */
+    font-size: calc(1vw + 22%);
+    /* font-size: 1.125rem; */
+    /* letter-spacing: -0.5px; */
+    letter-spacing: calc(-1vw + 1%);
+}
+
+.tulisan-belakang{
+    width: 100%;
+    height: 100%;
+    font-size: 30rem;
+    /* z-index: 2; */
+    font-family: genshin;
+    color: rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: -25px;
+    white-space: nowrap;
+    overflow: hidden; 
+}
+
+.hitam{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+
+@media screen and (max-width: 1440px){
+    .text{
+        font-size: 15px;
+        letter-spacing: -0.8px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .text{
+        font-size: 10px;
+        letter-spacing: -0.6px;
+    }
+    /* .desc{
+        width:80%;
+    } */
+}
+
+@media screen and (max-width: 768px){
+    .text{
+        font-size: 9px;
+        letter-spacing: -0.2px;
+    }
+    /* .desc{
+        width:65%;
+    } */
+    .container .char{
+        /* background-color:yellow; */
+        /* right: -50%; */
+        justify-self: center;
+        width: 1000px;
+        /* margin-left: 500rem; */
+        margin-right: -80px;
+        /* padding-left: 50%; */
+        /* overflow-x: hidden; */
+        white-space: nowrap;
+        overflow: hidden; 
+    }
+    .container{
+        overflow: hidden;
+        position: relative;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .element{
+        /* background-color: blue; */
+        /* width: 50.5%; */
+        /* height: 11.55%; */
+        width: calc(27vw + 1%);
+        height: calc(4vw + 0.15%);
+        background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetCharacters/bawahnama.png?raw=true);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 4%;
+        font-family: inter;
+        /* font-size: 1.25rem; */
+        font-size: calc(1.25vw + 18%);
+        color: black;
+        font-weight: 350;
+        /* letter-spacing: -1px; */
+        letter-spacing: calc(-1vw + 2%);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .text{
+        font-size: 6px;
+        letter-spacing: -0.1px;
+    }
+    .container .char{
+        /* background-color:yellow; */
+        /* right: -50%; */
+        justify-self: center;
+        width: 1000px;
+        /* margin-left: 500rem; */
+        margin-right: -80px;
+        /* padding-left: 50%; */
+        /* overflow-x: hidden; */
+        white-space: nowrap;
+        overflow: hidden; 
+    }
+
+    .container{
+        overflow: hidden;
+        position: relative;
+    }
+    body{
+        overflow-x: hidden;
+    }
+
+    .element{
+        /* background-color: blue; */
+        /* width: 50.5%; */
+        /* height: 11.55%; */
+        width: calc(25vw + 1%);
+        height: calc(4vw + 0.15%);
+        background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetCharacters/bawahnama.png?raw=true);
+        background-position: center;
+        background-size: cover;
+        margin-top: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 4%;
+        font-family: inter;
+        /* font-size: 1.25rem; */
+        font-size: calc(1.25vw + 18%);
+        color: black;
+        font-weight: 350;
+        /* letter-spacing: -1px; */
+        letter-spacing: calc(-1vw + 2%);
+        white-space: nowrap;
+        overflow: hidden; 
+    }
+
+    /* .desc{
+        width:70%;
+    } */
+}
+
+@media screen and (max-width: 426px){
+    .desc{
+        /* background-color: red; */
+        margin-top: 5%;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: calc(40vw + 40%);
+        /* height: calc(45vw - 1%); */
+        padding: 3%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nama{
+        /* background-color: red; */
+        /* font-size: 4.688rem; */
+        font-size: calc(6vw + 7%);
+        letter-spacing: calc(-3px + 0.1rem);
+    }
+
+    .desc .text{
+        /* background-color: yellow; */
+        font-family: inter;
+        color: white;
+        flex-basis: 95%;
+        font-weight: 300;
+        padding-left: 3%;
+        font-size: calc(2vw + 22%);
+        letter-spacing: calc(-1vw + 1%);
+    }
+
+    .kiri .element{
+        width: calc(38vw + 6%);
+        height: calc(4.5vw + 2%);
+        background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetCharacters/bawahnama.png?raw=true);
+        /* font-size: 1.25rem; */
+        font-size: calc(2.5vw + 9%);
+        letter-spacing: calc(-1vw + 2%);
+    }
+
+    .kiri .garis-atas{
+        /* height: 1.5%; */
+        height: calc(1.5vw + 0.1%);
+        width: 30%;
+        background-color: #CDA474;
+        margin-bottom: 2%;
+    }
+
+    /* .vector-img{
+        white-space: nowrap;
+        overflow: hidden; 
+        justify-self: center;
+        width: 1000px;
+    } */
+
+    .element{
+        width: calc(24vw + 3%);
+        height: calc(4vw - 0.15%);
+        background-image: url(https://github.com/neisyaholly/JenshinImpekz/blob/main/asset/AssetCharacters/bawahnama.png?raw=true);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 4%;
+        font-family: inter;
+        /* font-size: 1.25rem; */
+        font-size: calc(1.25vw + 18%);
+        color: black;
+        font-weight: 350;
+        /* letter-spacing: -1px; */
+        letter-spacing: calc(-1vw + 2%);
+        white-space: nowrap;
+        overflow: hidden; 
+    }
+
+
+}
+
